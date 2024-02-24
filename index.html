@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Product Page</title>
+	<link rel="stylesheet" type="text/css" href="product.css">
+</head>
+<body>
+	<div class="container">
+		<div class="product">
+			<div class="gallery">
+				<img src="image1.webp" id="productImg">
+				<div class="controls">
+					<span class="btn1 active"></span>
+					<span class="btn1"></span>
+					<span class="btn1"></span>
+				</div>
+			</div>
+			<div class="details">
+				<h1>Causal T-shirt for Men</h1>
+				<h2>PRICE: $<span>15.00</span></h2>
+				<h3>30% OFF</h3>
+				<P>This T-shirt is in american print.<br> In this T-shirts men looks like a gentlemen.</P>
+				<div class="product-size">
+					<p>Size</p>
+					<form>
+						<label for="small">
+						<input type="radio" name="radio" id="small">
+						<span>S</span>
+
+						</label>
+
+
+						<label for="medium">
+						<input type="radio" name="radio" id="medium">
+						<span>M</span>
+
+						</label>
+
+						<label for="large">
+						<input type="radio" name="radio" id="large">
+						<span>L</span>
+
+						</label>
+
+						<label for="e-large">
+						<input type="radio" name="radio" id="e-large">
+						<span>XL</span>
+
+						</label>
+
+						<label for="xx-large">
+						<input type="radio" name="radio" id="xx-large">
+						<span>XXL</span>
+
+						</label>
+						
+
+					</form>
+				</div>
+
+				<div class="color-select">
+
+						<p>Color</p>
+					<form>
+						<label for="red">
+							<input type="radio" name="radio" id="red">
+							<span class="color-1"></span>
+						</label>
+						<label for="black">
+							<input type="radio" name="radio" id="black">
+							<span class="color-2"></span>
+						</label>
+						<label for="gray">
+							<input type="radio" name="radio" id="gray">
+							<span class="color-3"></span>
+						</label>
+						<label for="white">
+							<input type="radio" name="radio" id="white">
+							<span class="color-4"></span>
+						</label>
+					</form>
+				</div>
+
+				<div class="quan">
+					<p>Quantity</p>
+					<input type="number" name="number" value="1">
+				</div>
+
+				<button class="btn">Buy Now</button>
+
+				
+
+			</div>
+		</div>
+	</div>
+
+
+<script type="text/javascript">
+	let productImg = document.getElementById("productImg");
+	let btn1 = document.getElementsByClassName("btn1");
+
+	let red = document.getElementById("red");
+	let black = document.getElementById("black");
+	let gray = document.getElementById("gray");
+	let white = document.getElementById("white");
+
+
+	red.onclick = function(){
+		productImg.src = "red.webp";
+	}
+
+	gray.onclick = function(){
+		productImg.src = "gray.webp";
+	}
+
+	black.onclick = function(){
+		productImg.src = "black.webp"
+	}
+
+	white.onclick = function(){
+		productImg.src = "image1.webp"
+	}
+
+
+	btn1[0].onclick = function(){
+		productImg.src = "image1.webp"
+
+
+		for(bt of btn1){
+			bt.classList.remove("active")
+		}
+		this.classList.add("active");
+	}
+	btn1[1].onclick = function(){
+		productImg.src = "image2.webp"
+
+		for(bt of btn1){
+			bt.classList.remove("active")
+		}
+		this.classList.add("active");
+	}
+	btn1[2].onclick = function(){
+		productImg.src = "image3.webp"
+		
+		for(bt of btn1){
+			bt.classList.remove("active")
+		}
+		this.classList.add("active");
+	}
+</script>
+</body>
+</html>

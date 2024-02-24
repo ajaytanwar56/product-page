@@ -1,0 +1,227 @@
+*{
+	padding:0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.container{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: wheat;
+
+}
+
+.product{
+	width: 100%;
+	max-width: 750px;
+	background-color: white;
+	display: flex;/*
+	align-items: center;*/
+	justify-content: center;
+
+}
+
+.gallery{
+	flex-basis: 47%;
+	background-color: black;
+	width: 47%;
+	text-align: center;
+	transform: scale(1.11);
+	box-shadow: -5px 10px 10px(0,0,0,0.11);
+	position: relative;
+}
+
+
+.gallery img{
+	width: 280px;
+    margin-top: 60px;
+}
+
+.details{
+	flex-basis: 53%;
+	width: 53%;
+	background-color: #fff;
+	padding: 12px 30px;
+}
+
+.details h1{
+	font-size: 32px;
+    margin-top: 6px;
+    margin-bottom: 7px;
+    margin-left: 6px;
+    color: gray;
+}
+
+.details h2{
+	font-size: 24px;
+    margin-top: 6px;
+    margin-bottom: 7px;
+    margin-left: 6px;
+    color: gray;
+}
+.details h3{
+	font-size: 18px;
+    margin-top: 6px;
+    margin-bottom: 7px;
+    margin-left: 6px;
+    color: orange;
+}
+
+
+.details p{
+	font-size: 16PX;
+    margin-left: 6px;
+    margin-top: 8px;
+    color: gray;
+}
+
+.product-size{
+	display: flex;
+	align-items: center;
+}
+
+.product-size p{
+	    font-size: 20px;
+    margin: 12px 27px 12px 6px;
+}
+
+.product-size form{
+	display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 18px;
+    color: gray;/*
+    font-weight: 600;*/
+    margin-top: 3px;
+}
+
+.product-size input:checked+ span{
+	color:blue;
+	font-weight: 800;
+}
+
+
+.product-size input{
+	display: none;
+}
+
+.color-select{
+	display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.color-select form{
+	display: flex;
+    align-items: center;
+    margin-top: 5px;
+    gap: 25px;
+}
+
+.color-select p{
+
+	    font-size: 20px;
+    margin: 12px 27px 12px 6px;
+
+}
+
+.color-select span{
+	width: 15px;
+	height: 15px;
+	background-color:red;
+	border-radius: 50%;
+	display: inline-block;
+	cursor: pointer;
+
+}
+
+
+.color-select .color-1{
+	background-color: red;
+}
+
+.color-select .color-2{
+	background-color: black;
+}
+
+.color-select .color-3{
+	background-color: gray;
+}
+
+.color-select .color-4{
+	background-color: wheat;
+}
+
+.color-select input{
+	display: none;
+}
+
+.color-select input:checked+ span{
+	transform: scale(0.7);
+	box-shadow: 0 0 0 4px #fff, 0 0 0 6px #000;
+}
+
+.quan{
+	display: flex;
+	align-items: center;
+	grid-gap: 10px;
+}
+
+.quan p{
+	    font-size: 20px;
+    margin: 12px 27px 12px 6px;
+}
+
+.quan input{
+	width: 43px;
+    height: 25px;
+    border-radius: 15px;
+    padding-left: 6px;
+    border: none;
+    background: gray;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 4px;
+
+}
+
+
+.btn{
+	width: 100%;
+    padding: 13px;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-left: 6px;
+    background: blue;
+    border: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 25px;
+    box-shadow: 0 10px 10px rgba(85,63,240,0.25);
+    cursor: pointer;
+}
+
+
+.controls{
+	position: absolute;
+	bottom: 40px;
+	right: 20px;
+}
+
+.btn1{
+	display: block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: rgba(255,255,255,0.5);
+	cursor: pointer;
+	margin: 10px;
+}
+
+.btn1.active{
+	background-color: #553ff0;
+}
